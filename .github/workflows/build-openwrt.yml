@@ -120,11 +120,11 @@ jobs:
       if: (!cancelled())
       run: df -hT
 
-    - name: Zip bin directory
-      if: steps.compile.outputs.status == 'success' && !cancelled()
-      run: |
-        cd ${GITHUB_WORKSPACE}/openwrt/bin
-        zip -r ${GITHUB_WORKSPACE}/openwrt/OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip *
+#     - name: Zip bin directory
+#       if: steps.compile.outputs.status == 'success' && !cancelled()
+#       run: |
+#         cd ${GITHUB_WORKSPACE}/openwrt/bin
+#         zip -r ${GITHUB_WORKSPACE}/openwrt/OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip *
 
     - name: Organize files
       id: organize
