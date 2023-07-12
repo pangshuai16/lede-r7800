@@ -105,7 +105,6 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the 
-    
       id: compile
       run: |
         cd ${GITHUB_WORKSPACE}/openwrt
