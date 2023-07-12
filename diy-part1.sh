@@ -15,9 +15,9 @@
 
 # Add a feed source
 # 整合包
-# echo 'src-git kiddin9 https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 # istore应用商店
 #sed -i '$src-git istore https://github.com/linkease/istore;main' feeds.conf.default
@@ -29,7 +29,7 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # zerotier独立包
 sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
-git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/custom/luci-app-zerotier
+#git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/custom/luci-app-zerotier
 
 # pushbot机器人
 #git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-pushbot
