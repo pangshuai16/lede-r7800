@@ -39,7 +39,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-
+      
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -104,7 +104,8 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: Compile the firmware
+    - name: Compile the 
+    
       id: compile
       run: |
         cd ${GITHUB_WORKSPACE}/openwrt
@@ -129,7 +130,7 @@ jobs:
       id: organize
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cd ${GITHUB_WORKSPACE}/openwrt/bin/targets/*/*
+        cd ${GITHUB_WORKSPACE}/openwrt/bin/targets/ipq806x/generic/
         rm -rf packages
         mv ${GITHUB_WORKSPACE}/openwrt/OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}.zip ./
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
