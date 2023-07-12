@@ -28,6 +28,9 @@ sed -i '$a src-git src-git passwall2 https://github.com/xiaorouji/openwrt-passwa
 sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
 git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/custom/luci-app-zerotier
 
+# pushbot机器人
+git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-pushbot
+
 # design主题
 git clone -b js https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git package/luci-app-design-config
