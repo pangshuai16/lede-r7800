@@ -15,7 +15,6 @@
 
 # Add a feed source
 # echo 'src-git kiddin9 https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
-echo 'src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages' >>feeds.conf.default
-echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' >>feeds.conf.default
-echo 'src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' >>feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
 git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/custom/luci-app-zerotier
