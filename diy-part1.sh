@@ -37,3 +37,6 @@ git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-p
 # design主题
 git clone -b js https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git package/luci-app-design-config
+
+# cpu频率
+git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/luci-app-cpufreq
