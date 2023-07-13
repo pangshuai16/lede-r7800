@@ -25,7 +25,7 @@ sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.de
 # passwall独立包
 sed -i '$a src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages' feeds.conf.default
 #sed -i '$a src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci' feeds.conf.default  //如果是编译passwall2着不需要否则会加载重复软件包
-sed -i '$a src-git src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
+sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
 
 # zerotier独立包
 sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
