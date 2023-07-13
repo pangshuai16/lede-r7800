@@ -35,8 +35,11 @@ git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/c
 git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-pushbot
 
 # design主题
-git clone -b js https://github.com/gngpp/luci-theme-design.git  package/luci-theme-design
-git clone https://github.com/gngpp/luci-app-design-config.git package/luci-app-design-config
+git clone -b js https://github.com/gngpp/luci-theme-design.git  package/custom/luci-theme-design
+git clone https://github.com/gngpp/luci-app-design-config.git package/custom/luci-app-design-config
 
 # cpu频率
-git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/luci-app-cpufreq
+git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/custom/luci-app-cpufreq
+
+# 广告屏蔽
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/custom/luci-app-adguardhome
