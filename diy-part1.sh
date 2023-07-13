@@ -20,7 +20,7 @@
 #sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 # istore应用商店
-sed -i '$src-git istore https://github.com/linkease/istore;main' feeds.conf.default
+sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.default
 
 # passwall独立包
 sed -i '$a src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages' feeds.conf.default
