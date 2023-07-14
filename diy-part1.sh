@@ -19,9 +19,6 @@
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
-# istore应用商店
-sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.default
-
 # passwall独立包
 sed -i '$a src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages' feeds.conf.default
 sed -i '$a src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci' feeds.conf.default  //如果是编译passwall2着不需要否则会加载重复软件包
@@ -37,6 +34,10 @@ git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-p
 # design主题
 git clone -b js https://github.com/gngpp/luci-theme-design.git  package/custom/luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git package/custom/luci-app-design-config
+
+# argon主题
+git clone https://github.com/jerrykuku/luci-theme-argon.git  package/custom/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/luci-app-argon-config
 
 # cpu频率
 git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/custom/luci-app-cpufreq
