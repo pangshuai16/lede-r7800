@@ -20,8 +20,8 @@
 #sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 # passwall独立包
-sed -i '$a src-git PWpackages https://github.com/xiaorouji/openwrt-passwall.git;packages' feeds.conf.default
-sed -i '$a src-git PWluci https://github.com/xiaorouji/openwrt-passwall.git;luci' feeds.conf.default  //如果是编译passwall2着不需要否则会加载重复软件包
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/custom/passwall-package
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/custom/luci-app-passwall
 #sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
 
 # zerotier独立包
