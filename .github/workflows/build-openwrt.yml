@@ -198,6 +198,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
+        tag: ${{ env.TAG_TIME }}
         changelog: release.txt
         file: ${{ env.FIRMWARE }}/*
         
