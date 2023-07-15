@@ -17,11 +17,11 @@
 # 整合包
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-#sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 # passwall独立包
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/custom/passwall-package
-git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/custom/luci-app-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages package/custom/passwall-package
+#git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/custom/luci-app-passwall
 #sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
 
 # zerotier独立包
@@ -43,4 +43,4 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/cust
 #git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/custom/luci-app-cpufreq
 
 # 广告屏蔽
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/custom/luci-app-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome package/custom/luci-app-adguardhome
