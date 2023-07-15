@@ -25,22 +25,22 @@ git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci package/cust
 #sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
 
 # zerotier独立包
-sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
-git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/custom/luci-app-zerotier
+#sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
+#git clone https://github.com/rufengsuixing/luci-app-zerotier -b master package/custom/luci-app-zerotier
 
 # pushbot机器人
-git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-pushbot
+#git clone https://github.com/zzsj0928/luci-app-pushbot package/custom/luci-app-pushbot
 
 # design主题
-git clone -b js https://github.com/gngpp/luci-theme-design.git  package/custom/luci-theme-design
-git clone https://github.com/gngpp/luci-app-design-config.git package/custom/luci-app-design-config
+#git clone -b js https://github.com/gngpp/luci-theme-design.git  package/custom/luci-theme-design
+#git clone https://github.com/gngpp/luci-app-design-config.git package/custom/luci-app-design-config
 
 # argon主题
-git clone https://github.com/jerrykuku/luci-theme-argon.git  package/custom/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/luci-app-argon-config
+#git clone https://github.com/jerrykuku/luci-theme-argon.git  package/custom/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-app-argon-config.git package/custom/luci-app-argon-config
 
 # cpu频率
-git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/custom/luci-app-cpufreq
+#git clone https://github.com/openwrt-xiaomi/luci-app-cpufreq package/custom/luci-app-cpufreq
 
 # 广告屏蔽
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/custom/luci-app-adguardhome
