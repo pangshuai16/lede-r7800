@@ -45,3 +45,5 @@
 
 # 广告屏蔽
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/custom/luci-app-adguardhome
+
+git clone https://github.com/hubbylei/openssl package/custom/openssl
