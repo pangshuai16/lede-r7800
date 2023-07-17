@@ -19,15 +19,15 @@ sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' packag
 
 del_data="
 ./feeds/luci/applications/luci-app-serverchan
-./feeds/luci/themes/luci-theme-bootstrap
 ./feeds/packages/net/dns2socks
 ./feeds/packages/net/ipt2socks
 ./feeds/packages/net/microsocks
 ./feeds/packages/net/pdnsd-alt
-./feeds/packages/net/smartdns
 ./feeds/packages/net/v2ray-geodata
 ./package/libs/openssl
 "
+# ./feeds/luci/themes/luci-theme-bootstrap
+# ./feeds/packages/net/smartdns
 
 for cmd in $del_data;
 do
